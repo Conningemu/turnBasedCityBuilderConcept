@@ -39,7 +39,7 @@
 <br>
 
 > When the search tile is touching two or more already explored tiles, the game instead chooses the intersection of the terrain types available of the surrounding tiles. This can cause a problem if there are no available terrain in the intersection of the terrains, so to avoid this, all terrains must have a grasslands terrain in their possible explore terrains. <br>
-> This avoids the situation of the intersection between two different terrain types to be zero. 
+> This avoids the situation where the intersection between two different terrain types to be zero. 
 <br>
 
 
@@ -56,10 +56,39 @@
 
 ## Build System
 
-> Uh Yeah
+> Each explored tile can have one building built on the tile. The buildings available for that tile depends on the tile's terrain. Each terrain type has a configurable list of buildings that they can build. Once a building has been built the player can no longer remove the building nor place a new building on that tile. <br>
+>Each building cost a set amount of resources, when the player no longer has enough resources to build the building the button is greyed out.<br>
+<br>
 
+![TurnManagement](GithubImages/BuildSystem.gif)
+<br>
+
+Buildings have configurable effects. All buildings can either immediately give any of the 4 types of resources, and/or give a continual amount of resources per turn. Buildings types can also have specific abilities unrelated to resources. <br> 
+<br>
+For example the castle building that appears in the center square at the start of the game provides the player with 20 resources, it also generates 5 additional resources per turn. But it also has an additional effect where it removes itself from the list of available buildings. This means that one is built at the start of the game but the player cannot build a second one. 
+> 
 ## Movement
+> Player movement is implemented into the game and allows the player to scroll in any direction as well as zoom in and out a set distance. The zoom speed approaches the further it gets away from the the median distance, so the player cannot scroll infinitely out.<br>
+<br>
+
+![MovementGif](GithubImages/MovementGif.gif)
+<br>
+
 
 ## Potential Routes for Further Development
 
-> Uh
+> There are multiple different routes that could be taken from this point in development.<br><br>
+> The most immediately valuable additional change would be the creation of an event system that introduces conflict to the game.<br>
+> For example, events could occur when the player advances to a new year. These events could force the player to make a decision between two choices that both have negative outcomes. A skilled player would make a decisions that they are better equipped to handle. As the years/turns increase, the difficulty and frequency of these event choices could increase as well until only the smartest player with the most optimal city survives. <br>
+> These events could also modify the way the player plays. Decisions could remove or add different types of buildings that the player has access to, so they would have to change they way they play depending on the opportunities given to them. <br>
+> An interesting example game to reference could be Reigns
+<br> <br>
+> Another route that could be taken is to just add a large amount of content and terrain rules. Instead of the player fighting for survival they are attempting to find all possible combinations and buildings. <br>
+> For example a Deep Forest terrain type could be added that can only be discovered if the search tile is surrounded by forest tiles. This new tile could have new building and interactions that work differently than the regular forest tile. Or a building that only unlocks if the player first builds other buildings. Such as a tavern only unlocks if the player has made the farm, mill, and brewery buildings beforehand. <br> 
+> In this case the fun of the game could be found just by exploring the combinations and trying to discover all of the different buildings in the game. <br>
+> An interesting example game to reference could be Doodle God. <br>
+
+## Conclusion
+
+> This was a fun project to work on and thank you for reading through this whole write up. Although I am more interested in exploring new different mechanics and engines at the moment, I may come back to this in the future.<br>
+> If you have any questions or want to reach out, shoot me an email. 
