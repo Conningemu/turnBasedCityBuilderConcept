@@ -26,6 +26,7 @@
 > When the game is first launched the player is placed on a 3x3 grid of tiles. <br>
 > The player can click on the search tiles around the edge of the grid in order to generate an additional tile on the grid.<br> 
 <br>
+
 ![ExploreGif](GithubImages/ExploreGif.gif)
 <br>
 
@@ -47,6 +48,7 @@
 > This project works on a turn based system. The system is relatively simple, the player is given three actions per turn. The player can perform two different types of actions. They can either explore and generate new tiles or they can build buildings on the previously generated tiles. When they have used all three actions they will not be able perform another action until after they end their turn.<br>
 > They must perform all three actions in order to end their turn <br>
 <br>
+
 ![TurnManagement](GithubImages/TurnManagement.gif)
 <br>
 > When the player ends their turn the year in the top right updates as well as all four resources. Each resource has symbol next to it that informs the player whether that resource will increase, decrease, or stay the same. <br>
