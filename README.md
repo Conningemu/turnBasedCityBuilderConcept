@@ -33,6 +33,7 @@
 > For example if a user explores next to an ocean tile that tile can only become a water, beach, or grasslands tile. <br>
 
 <br>
+
 ![WaterTile](GithubImages/WaterTile.gif)
 <br>
 
@@ -43,7 +44,13 @@
 
 ## Turn System
 
-> Might need more images 
+> This project works on a turn based system. The system is relatively simple, the player is given three actions per turn. The player can perform two different types of actions. They can either explore and generate new tiles or they can build buildings on the previously generated tiles. When they have used all three actions they will not be able perform another action until after they end their turn.<br>
+> They must perform all three actions in order to end their turn <br>
+<br>
+![TurnManagement](GithubImages/TurnManagement.gif)
+<br>
+> When the player ends their turn the year in the top right updates as well as all four resources. Each resource has symbol next to it that informs the player whether that resource will increase, decrease, or stay the same. <br>
+> Currently the top three resources do not have functionality however the bottom resource can stop a player from creating new buildings.
 
 ## Build System
 
