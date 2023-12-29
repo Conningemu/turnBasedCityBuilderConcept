@@ -1,7 +1,7 @@
 # Proof of Concept for a Turn Based City Builder
 > Hello! <br>
-> This is the exectuable of a Turn Based City Builder project that I worked on recently. <br>
-> This project is a proof of concept, it does not contain a full gameplay loop. Instead this was an exploration of the different systems that go into creating a grid based, turn based, city builder game would require. <br>
+> This is the exectuable of a Turn Based City Builder project that I worked on recently. <br> <br>
+> This project is a proof of concept, it does not contain a full gameplay loop. Instead this was an exploration of the different systems that go into creating a grid based, turn based, city builder game would require. <br> <br>
 > Check out the game if you want to! Otherwise this README is going to go through each system that was implemented for this project <br>
 
 ![Overarching Gif](GithubImages/OverArchingGif.gif)
@@ -10,8 +10,9 @@
 
 ## Table of Contents
 - [Exploration and Tile Generation](#Exploration-and-Tile-Generation)
-- [Turn System and Movement](#Turn-System-and-Movement)
+- [Turn System](#Turn-System)
 - [Build System](#Build-System)
+- [Movement](#Movement)
 - [Potential Routes for Further Development](#Potential-Routes-for-Further-Development)
 
 <br>
@@ -24,11 +25,14 @@
 
 > When the game is first launched the player is placed on a 3x3 grid of tiles. <br>
 > The player can click on the search tiles around the edge of the grid in order to generate an additional tile on the grid.<br> 
+<br>
 ![ExploreGif](GithubImages/ExploreGif.gif)
 <br>
+
 > In the backend, there is a modifiable ruleset about which tiles can be generated next to each tile. This allows a designer to change how the terrain generation feels with just a simple alteration to the tile ruleset. This also allows for interesting specialized generation depending on the tiles surrounding environment<br>
 > For example if a user explores next to an ocean tile that tile can only become a water, beach, or grasslands tile. <br>
 
+<br>
 ![WaterTile](GithubImages/WaterTile.gif)
 <br>
 
@@ -37,13 +41,15 @@
 <br>
 
 
-## Turn System and Movement
+## Turn System
 
 > Might need more images 
 
 ## Build System
 
 > Uh Yeah
+
+## Movement
 
 ## Potential Routes for Further Development
 
