@@ -1,7 +1,7 @@
 # Proof of Concept for a Turn Based City Builder
 > Hello! <br>
 > This is a Turn Based City Builder project that I worked on recently. <br> <br>
-> This project is a proof of concept, it does not contain a full gameplay loop. Instead this was an exploration of the different systems that go into creating a grid based, turn based, city builder game would require. <br> <br>
+> This project is a proof of concept This was an exploration of the different systems that go into creating a grid based, turn based, city builder game would require. <br> <br>
 > Check out the game if you want to! Otherwise this README is going to go through each system that was implemented for this project <br>
 
 ![Overarching Gif](GithubImages/OverArchingGif.gif)
@@ -13,7 +13,7 @@
 - [Turn System](#Turn-System)
 - [Build System](#Build-System)
 - [Movement](#Movement)
-- [Potential Routes for Further Development](#Potential-Routes-for-Further-Development)
+- [Potential Routes for Further Design](#Potential-Routes-for-Further-Design)
 
 <br>
 
@@ -75,7 +75,7 @@ For example the castle building that appears in the center square at the start o
 <br>
 
 
-## Potential Routes for Further Development
+## Potential Routes for Further Design
 
 > There are multiple different routes that could be taken from this point in development.<br><br>
 > The most immediately valuable additional change would be the creation of an event system that introduces conflict to the game.<br>
